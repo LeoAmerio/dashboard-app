@@ -3,27 +3,28 @@ import NavLinks from '@/app/ui/dashboard/nav-links';
 import AcmeLogo from '@/app/ui/acme-logo';
 import { PowerIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
+import { CardWithBackground } from './cards';
 
 export default function SideNav() {
   return (
-    <div className="flex h-full flex-col px-3 py-4 md:px-2">
-      <Link
-        className="mb-2 flex h-20 items-end justify-start rounded-md p-4 md:h-40 relative"
+    <div className="flex h-full flex-col px-3 py-4 md:py-6">
+      <CardWithBackground img='/cat.png' alt='a' />
+      {/*<Link
+        className="relative mb-2 flex h-20 items-end justify-start rounded-md overflow-hidden md:h-40"
         href="/"
       >
-        <Image 
-          src={'/opengraph-image.png'}
-          alt='Logo for Background'
-          layout='fill'
-          objectFit='cover'
-          className='opacity-70'
+        <Image
+          src="/cat.png" // Asegúrate de que esta ruta sea correcta
+          alt="Logo for Background"
+          layout="fill"
+          objectFit="cover"
+          className="absolute inset-0 z-0 opacity-70" // Ajusta la opacidad según sea necesario
           quality={100}
         />
-        <div className="w-32 text-white md:w-40 z-10">
+        <div className="w-32 text-white md:w-40 z-10 relative">
           <AcmeLogo />
         </div>
-      </Link>
-      /***/
+  </Link>*/}
       <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
         <NavLinks />
         <div className="hidden h-auto w-full grow rounded-md bg-gray-50 md:block"></div>

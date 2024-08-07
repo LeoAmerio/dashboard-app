@@ -1,9 +1,10 @@
+import { CardWithBackground } from '@/app/ui/dashboard/cards'
 import React from 'react'
 
 export default function page() {
   return (
     <div>
-      Customers Page
+      <CardWithBackground img='/cat.png' alt='foto gatito' />
     </div>
   )
 }

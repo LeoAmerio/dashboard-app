@@ -5,6 +5,9 @@ import {
   InboxIcon,
 } from '@heroicons/react/24/outline';
 import { lusitana } from '@/app/ui/fonts';
+import Link from 'next/link';
+import Image from 'next/image';
+import AcmeLogo from '../acme-logo';
 
 const iconMap = {
   collected: BanknotesIcon,
@@ -55,4 +58,35 @@ export function Card({
       </p>
     </div>
   );
+}
+
+interface CardBgProps {
+  classNamesDivLogo?: string;
+  classNamesLink?: string;
+  classNamesImg?: string;
+  img: string;
+  alt: string;
+}
+
+export function CardWithBackground({ classNamesDivLogo, img, alt }: CardBgProps) {
+  return (
+    <div>
+      <Link
+        className="relative mb-2 flex h-20 items-end justify-start rounded-md overflow-hidden md:h-40"
+        href="/"
+      >
+        <Image
+          src={img} // Asegúrate de que esta ruta sea correcta
+          alt={alt}
+          layout="fill"
+          objectFit="cover"
+          className="absolute inset-0 z-0 opacity-70" // Ajusta la opacidad según sea necesario
+          quality={100}
+        />
+        <div className={`${ classNamesDivLogo ? classNamesDivLogo : "w-32 text-white md:w-40 z-10 relative"}`}>
+          <AcmeLogo />
+        </div>
+      </Link>
+    </div>
+  )
 }
