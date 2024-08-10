@@ -1,8 +1,8 @@
-import AcmeLogo from '@/app/ui/acme-logo';
+import AcmeLogo from '@/components/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import Image  from 'next/image';
-import { CardWithBackground } from './ui/dashboard/cards';
+import { CardWithBackground } from '../components/ui/dashboard/cards';
 
 export default function Page() {
   return (

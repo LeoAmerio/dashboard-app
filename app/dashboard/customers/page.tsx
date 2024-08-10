@@ -1,4 +1,4 @@
-import { CardWithBackground } from '@/app/ui/dashboard/cards'
+import { CardWithBackground } from '@/components/ui/dashboard/cards'
 import React from 'react'
 
 export default function page() {
