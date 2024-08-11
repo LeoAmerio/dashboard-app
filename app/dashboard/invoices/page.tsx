@@ -1,6 +1,7 @@
-import React from 'react'
+import { fetchRevenue } from "@/app/lib/data";
 
-export default function page() {
+export default async function page() {
+  
   return (
     <div>
       Invoices Page

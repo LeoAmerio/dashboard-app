@@ -4,7 +4,7 @@ import Search from '@/components/ui/search';
 import {
   CustomersTableType,
   FormattedCustomersTable,
-} from '@/components/lib/definitions';
+} from '@/app/lib/definitions';
 
 export default async function CustomersTable({
   customers,
