@@ -1,0 +1,6 @@
+Add metadata to: 
+    - /login page.
+    - /dashboard/ page.
+    - /dashboard/customers page.
+    - /dashboard/invoices/create page.
+    - /dashboard/invoices/[id]/edit page.
